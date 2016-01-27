@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="container">
+            <div class="logo"><img src="/img" alt="our logo"></div>
+            <ul>
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+            <div class="heading">
+                <h1>Добро пожаловать в магазин готовых макетов</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-filter">
+            <form action="form.php" method="GET" class="filter-form">
+                <h3 class="filter-name-costs">Стоимость</h3>
+
+                <div class="range-filter">
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                    </div>
+                </div>
+                <div class="filter-grid-type">
+                    <h3 class="filter-grid-name">Сетка</h3>
+                    <label>
+                        <input type="radio" name="grid-type" value="0">Адаптивная
+                    </label>
+                    <label>
+                        <input type="radio" name="grid-type" value="1">Фиксированная
+                    </label>
+                    <label>
+                        <input type="radio" name="grid-type" value="2">Резиновая
+                    </label>
+                </div>
+                <div class="filter-features">
+                    <h3 class="filter-features-name">Особенности:</h3>
+                    <label>
+                        <input type="checkbox" name="feature-slider" value="slider">Слайдер
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature-features" value="features">Блок преимуществ
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature-news" value="news">Новости
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature-gallery" value="gallery">Галерея
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature-basket" value="basket">Корзина
+                    </label>
+                </div>
+                <input type="submit" value="Показать" class="filter-submit">
+            </form>
+        </div>
+        <div class="container-templates">
+            <div class="sort-params">
+                <div class="sort-params-headings">Сортировать:</div>
+                <ul>
+                    <li>По цене</li>
+                    <li>По типу</li>
+                    <li>По функционалу</li>
+                </ul>
+                <div class="sort-btns">
+                    <span class="sort-btns-down"></span>
+                    <span class="sort-btns-up"></span>
+                </div>
+            </div>
+            <div class="templates">
+                <div class="template"><img src="" alt=""></div>
+                <div class="template"><img src="" alt=""></div>
+                <div class="template"><img src="" alt=""></div>
+                <div class="template"><img src="" alt=""></div>
+                <div class="template"><img src="" alt=""></div>
+                <div class="template"><img src="" alt=""></div>
+            </div>
+        </div>
+        <div class="templates-paging">
+            <button class="btn-paging btn-paging-active"></button>
+            <button class="btn-paging"></button>
+            <button class="btn-paging"></button>
+            <button class="btn-paging btn-paging-next"></button>
+        </div>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a class="vk" href="#"></a>
+            <a class="fb" href="#"></a>
+            <a class="inst" href="#"></a>
+        </div>
+        <div class="friends">
+            <div class="friends-heading">Давайте дружить, это выгодно!</div>
+            <p class="friend-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
